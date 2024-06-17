@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World clock</title>
 </head>
 <body>
@@ -22,16 +24,16 @@
     <div class="city">
         <div>
         <h2 >Bangkok 🇨🇳</h2>
-        <div class="cityDate">Friday, 31.05.24</div>
+        <div class="cityDate" id ="bangkok">Friday, 31.05.24</div>
     </div>
-        <div class="cityTime">10:22 <small>AM</small></div>
+        <div class="cityTime" id="bangkokTime">10:22 <small>AM</small></div>
     </div>
     <div class="city">
         <div>
-        <h2 >Bangkok 🇨🇳</h2>
-        <div class="cityDate">Friday, 31.05.24</div>
+        <h2 >Berlin 🇩🇪</h2>
+        <div class="cityDate" id="berlin">Friday, 31.05.24</div>
     </div>
-        <div class="cityTime">10:22 <small>AM</small></div>
+        <div class="cityTime" id="berlinTime">10:22 <small>AM</small></div>
     </div>
     </div>
     <footer>
