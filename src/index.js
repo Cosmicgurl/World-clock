@@ -10,12 +10,12 @@ let berlinTime = moment().tz("Europe/Berlin");
 }
 
 
-	let bangkokElement = document.querySelector("#bangkok");
-	if(bangkokElement){
-	let bangkokTimeElement = bangkokElement.querySelector("#bangkokTime");
-	let bangkokDateElement = bangkokElement.querySelector(".cityDate");
-bangkokDateElement.innerHTML = moment().format("dddd Do MMM YYYY");
-bangkokTimeElement.innerHTML = moment().tz("America/Bogota").format("HH:mm:ss [<small>]A[<small>]");
+	let bogotaElement = document.querySelector("#bogota");
+	if(bogotaElement){
+	let bogotaTimeElement = bogotaElement.querySelector("#bogotaTime");
+	let bogotaDateElement = bogotaElement.querySelector(".cityDate");
+bogotaDateElement.innerHTML = moment().format("dddd Do MMM YYYY");
+bogotaTimeElement.innerHTML = moment().tz("America/Bogota").format("HH:mm:ss [<small>]A[<small>]");
 	}
 }
 
@@ -32,10 +32,13 @@ function updateCity(event){
 		    <div class="city">
         <div>
         <h2 >${cityName}</h2>
-        <div class="cityDate">${cityTime.format("MMMM Do YYYY")}</div>
+        <div class="cityDate">${cityTime.format("dddd Do MMMM YYYY")}</div>
     </div>
         <div class="cityTime" >${cityTime.format("HH:mm:ss")}<small>${cityTime.format(" A")}</small></div>
-    </div>
+				</div>
+				<div>
+				<a href="/" id="cityLink">all cities</a>
+</div>
 		`
 }
 
